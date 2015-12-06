@@ -1,0 +1,5 @@
+[api]
+        url = "http://mig/api/v1/"
+[gpg]
+        home = "/root/.gnupg"
+        keyid = "44D53F962B29C278E82B7769C5026C27F594783B"

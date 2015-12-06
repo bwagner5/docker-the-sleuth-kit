@@ -1,0 +1,43 @@
+{
+  "name": "Simple Memory",
+  "target": "queueloc like 'linux.%'",
+  "threat": {
+    "family": "malware",
+    "level": "high"
+  },
+  "operations": [
+      {
+        "module": "memory",
+      	"parameters": {
+			"searches": {
+				"somesearchlabel": {
+						"names": [
+								"firefox"
+						],
+						"contents": [
+								"some bogus content"
+						]
+				},
+				"another_search": {
+						"libraries": [
+								"libssl"
+						],
+						"bytes": [
+								"afd37df8b18462"
+						],
+						"options": {
+								"matchall": true,
+								"maxlength": 50000
+						}
+				}
+			}
+		}
+    }
+  ],
+  "description": {
+    "author": "Brandon Wagner",
+    "email": "",
+    "revision": 201410031030
+  },
+  "syntaxversion": 2
+}

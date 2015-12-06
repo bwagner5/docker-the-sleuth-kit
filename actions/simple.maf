@@ -1,0 +1,39 @@
+{
+  "name": "Simple IOCs",
+  "target": "queueloc like 'linux.%'",
+  "threat": {
+    "family": "malware",
+    "level": "high"
+  },
+  "operations": [
+    {
+      "module": "file",
+      "parameters": {
+        "searches": {
+          "iocs": {
+            "paths": [
+              "/usr/bin",
+              "/usr/sbin",
+              "/bin",
+              "/sbin",
+              "/tmp",
+              "/var/tmp"
+            ],
+            "sha256": [
+              "c5246498fe0c0c4fbf4ef1622d757818b697ae2ab3bc97195750803ceedb5d8c"
+            ],
+            "names": [
+              "legend.txt"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "description": {
+    "author": "Julien Vehent",
+    "email": "ulfr@mozilla.com",
+    "revision": 201410031030
+  },
+  "syntaxversion": 2
+}
